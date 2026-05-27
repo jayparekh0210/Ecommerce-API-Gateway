@@ -13,10 +13,10 @@ public class FallbackController {
         return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body("Product Service is down please try again later");
     }
 
-    @RequestMapping("/order")
-    public ResponseEntity<String> orderFallback() {
-        return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body("Order Service is down please try again later");
-    }
+//    @RequestMapping("/order")
+//    public ResponseEntity<String> orderFallback() {
+//        return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body("Order Service is down please try again later");
+//    }
     @RequestMapping("/user")
     public ResponseEntity<String> userFallback() {
         return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body("User Service is down please try again later");
